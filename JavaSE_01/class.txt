@@ -1,0 +1,2 @@
+className=JavaSE_01.day24_ClassLoader_Reflect_Module.T11_ReflectDemo7.Student
+methodName=study

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="freshBtn" type="button" value="刷新">
+    <input id="getLinkBtn" type="button" value="获取当前链接">
+    <input id="baiduBtn" type="button" value="百度一下，你就知道">
+</body>
+<script>
+    var fresh = document.getElementById("freshBtn");
+    fresh.onclick = function () {
+        location.reload();
+    }
+    var link = document.getElementById("getLinkBtn");
+    link.onclick = function () {
+        alert(location.href);
+    }
+    var baidu = document.getElementById("baiduBtn");
+    baidu.onclick = function () {
+        location.href = "http://www.baidu.com";
+    }
+</script>
+</html>

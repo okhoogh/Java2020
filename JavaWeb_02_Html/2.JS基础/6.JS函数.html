@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //创建方式1
+        var fun1 = new Function("a", "b", "alert(a)"); //了解就行
+        // fun1(3, 4);
+
+        //创建方式2
+        function fun2(a, b) {
+            alert(a);
+        }
+        //fun2(3 + 2);
+        
+        //创建方式3
+        var fun3 = function(a, b) {
+            return a + b;
+        }
+        //document.write(fun3(1, 2))
+
+        // JS里的函数是对象
+        document.write(fun1.length + " " + fun2.length + " " + fun3.length);
+        document.write("<br>");
+
+        // 方法是一个对象，如果定义名称相同的方法，会覆盖
+        fun2 = function(a, b, c) {
+            alert(a);
+            alert(b);
+        }
+        document.write(fun2.length + " " + fun2(1, 2, 3));
+        document.write("<br>");
+
+        // 可以不传参数给函数
+        fun2();
+
+        // 两数求和
+        function add(a, b) {
+            return a + b;
+        }
+        document.write(add(1, 2));
+        document.write("<br>");
+
+        // 求任意个数的和
+        function add() {
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        document.write(add(1, 2, 3, 4, 5));
+        document.write("<br>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a>点我试一试</a>
+    <input type="button" id="btn_set" value="设置属性">
+    <input type="button" id="btn_remove" value="删除属性">
+</body>
+<script>
+    var setA = document.getElementById("btn_set");
+    setA.onclick = function () {
+        var ea = document.getElementsByTagName("a")[0];
+        ea.setAttribute("href", "https://www.baidu.com");
+    }
+    var removeA = document.getElementById("btn_remove");
+    removeA.onclick = function () {
+        var ea = document.getElementsByTagName("a")[0];
+        ea.removeAttribute("href");
+    }
+</script>
+</html>

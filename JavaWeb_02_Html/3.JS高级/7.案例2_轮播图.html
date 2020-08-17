@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="pic" src="img/banner_1.jpg" width="99%" align="center">
+</body>
+<script>
+    var pic = document.getElementById("pic");
+    var i = 1;
+    function fun() {
+        pic.src = "img/banner_" + i + ".jpg";
+        i = i % 3 + 1;
+    }
+    setInterval(fun, 2000);
+</script>
+</html>

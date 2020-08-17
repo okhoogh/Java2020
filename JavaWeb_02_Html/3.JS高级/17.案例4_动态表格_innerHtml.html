@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            margin: 50px;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            border: 1px solid;
+            text-align: center;
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input id="Id" placeholder="请输入编号" type="text">
+    <input id="name" placeholder="请输入姓名" type="text">
+    <input id="sex" placeholder="请输入性别" type="text">
+    <input id="add" type="button" value="添加">
+</div>
+<table id="tab">
+    <caption>学生信息表</caption>
+    <tr>
+        <th>编号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>操作</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>令狐冲</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" id="a1" onclick="delTr(this)">删除</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>任我行</td>
+        <td>男</td>
+        <td><a href="javascript:void(0);" id="a2" onclick="delTr(this)">删除</a></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>岳不群</td>
+        <td>?</td>
+        <td><a href="javascript:void(0);" id="a3" onclick="delTr(this)">删除</a></td>
+    </tr>
+</table>
+</body>
+<script>
+    var add = document.getElementById("add");
+    add.onclick = function () {
+        var id = document.getElementById("Id").value;
+        var name = document.getElementById("name").value;
+        var sex = document.getElementById("sex").value;
+        var table = document.getElementsByTagName("table")[0];
+        table.innerHTML += "<tr>" + "<td>" + id + "</td>" +
+            "<td>" + name + "</td>" +
+            "<td>" + sex + "</td>" +
+            "<td><a href='javascript:void(0)' onclick='delTr(this)'>删除</a></td>" + "</tr>";
+    }
+
+    function delTr(obj) {
+        var table = obj.parentNode.parentNode.parentNode;
+        table.removeChild(obj.parentNode.parentNode);
+    }
+</script>
+</html>

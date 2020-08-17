@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+</body>
+<script>
+    // 1.一次性定时器
+    function fun() {
+        alert('boom~~');
+    }
+    var st1 = setTimeout(fun, 3000);
+    clearTimeout(st1);
+
+    // 2.循环定时器
+    var int = setInterval(fun, 2000);
+    clearInterval(int)
+</script>
+</html>

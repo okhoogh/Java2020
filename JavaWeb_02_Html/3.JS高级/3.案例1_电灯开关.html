@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img id="light" src="img/off.gif">
+
+<script>
+    var light = document.getElementById("light");
+    var flag = false;
+    function turn() {
+        light.src = flag ? "img/off.gif" : "img/on.gif";
+        flag = flag ^ true;
+    }
+    light.onclick = turn;
+</script>
+</body>
+</html>

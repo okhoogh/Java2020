@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var encode1 = encodeURI("http://我");
+        document.write(encode1 + "<br/>");
+        var decode1 = decodeURI(encode1);
+        document.write(decode1 + "<br/>");
+        var encode2 = encodeURIComponent("http://我");
+        document.write(encode2 + "<br/>");
+        var decode2 = decodeURIComponent(encode2);
+        document.write(decode2 + "<br/>");
+
+        var str = "234abc";
+        var number = parseInt(str);
+        document.write(number + 1 + "<br/>");
+
+        var nan = NaN;
+        document.write(isNaN(nan) + "<br/>");
+
+        var jscode = "alert(132)";
+        eval(jscode);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

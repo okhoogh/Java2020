@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="3.案例1_电灯开关.html">Test1</a>
+    <a href="7.案例2_轮播图.html">Test2</a>
+    <input id="Btn" type="button" value="获取历史记录个数">
+    <input id="forwardBtn" type="button" value="前进">
+    <input id="backBtn" type="button" value="后退">
+    <input id="goBtn" type="button" value="前/后">
+</body>
+<script>
+    var hcnt = document.getElementById("Btn");
+    hcnt.onclick = function () {
+        alert(history.length);
+    }
+    var forwardBtn = document.getElementById("forwardBtn");
+    forwardBtn.onclick = function () {
+        history.forward();
+    }
+    var backBtn = document.getElementById("backBtn");
+    backBtn.onclick = function () {
+        history.back();
+    }
+    var goBtn = document.getElementById("goBtn");
+    goBtn.onclick = function () {
+        // 正数：前进几个
+        // 负数：后退几个
+        history.go(1);
+    }
+</script>
+</html>
