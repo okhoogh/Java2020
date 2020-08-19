@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 1.失去焦点事件
+        /* var username = document.getElementById("username");
+        username.onblur = function () {
+            alert("失去焦点");
+        }*/
+        // 2.获得焦点事件
+        /*var flag = false;
+        username.onfocus = function () {
+            if(!flag) {
+                alert("获得焦点");
+                flag = true;
+            }
+        }*/
+
+        // 3.加载完成事件
+        window.onload = function () {
+            // 1.失去焦点事件
+            /*document.getElementById("username").onblur = function () {
+                alert("失去焦点");
+            }*/
+            // 4.鼠标移到元素上面事件
+            /*username.onmouseover = function () {
+                alert("鼠标来了...");
+            }*/
+            // 5.鼠标移开元素事件
+            /*username.onmouseout = function () {
+                alert("鼠标走了...");
+            }*/
+            // 6.鼠标点击元素事件
+            username.onmousedown = function (event) {
+                alert("鼠标点了一下..." + " " + event.button);
+            }
+            // 7.键盘输入事件
+            // username.onkeydown = function (event) {
+            //     // alert("键盘点了一下..." + " " + event.keyCode);
+            //     if(event.keyCode == 13) {
+            //         alert("提交表单");
+            //     }
+            // }
+            // 8.内容改变事件
+            // username.onchange = function (event) {
+            //     alert("改变了...");
+            // }
+            // 用于省市区的联动
+            // document.getElementById("city").onchange = function (event) {
+            //     alert("改变了...");
+            // }
+            // 9.提交事件
+            // document.getElementById("form").onsubmit = function () {
+            //     var flag = false;
+            //
+            //     return flag;
+            // }
+
+        }
+        function checkForm() {
+            return false;
+        }
+    </script>
+</head>
+<body>
+<form action="#" id="form" onclick="return checkForm();">
+    <input id="username" type="text" name="username" >
+    <select id="city">
+        <option>---请选择---</option>
+        <option>北京</option>
+        <option>上海</option>
+    </select>
+    <input type="submit" value="提交">
+</form>
+</body>
+
+</html>
