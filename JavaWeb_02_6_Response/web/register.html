@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function checkChange() {
+            var img = document.getElementById("checkCode");
+            // 加时间戳
+            var time = new Date().getTime();
+            img.src = "/day15/checkCodeServlet?" + time;
+        }
+        onload = function () {
+            // 1.获取图片对象
+            var img = document.getElementById("checkCode");
+            // 2.绑定图片单击事件
+            img.onclick = checkChange;
+            // 3.绑定链接单击事件
+            var change = document.getElementById("change");
+            change.onclick = checkChange;
+        }
+    </script>
+</head>
+<body>
+    <img src="/day15/checkCodeServlet" id="checkCode">
+    <a href="#" id="change">看不清换一张</a>
+</body>
+</html>
