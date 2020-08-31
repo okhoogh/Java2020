@@ -45,7 +45,9 @@
             </tr>
         </table>
     </form>
-    <div><%=request.getAttribute("cc_error") == null ? "" : request.getAttribute("cc_error")%></div>
-    <div><%=request.getAttribute("login_error") == null ? "" : request.getAttribute("login_error")%></div>
+<%--    <div><%=request.getAttribute("cc_error") == null ? "" : request.getAttribute("cc_error")%></div>--%>
+<%--    <div><%=request.getAttribute("login_error") == null ? "" : request.getAttribute("login_error")%></div>--%>
+    ${requestScope.cc_error}
+    ${requestScope.login_error}
 </body>
 </html>
