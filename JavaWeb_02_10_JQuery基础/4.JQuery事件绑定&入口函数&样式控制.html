@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时间绑定</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        // 1. 事件绑定
+        // 给btn1添加点击事件
+        // window.onload = function() {
+        //     $("#btn1").click(function () {
+        //         alert("btn1");
+        //     });
+        // }
+
+        // 2. 入口函数
+        //jquery入口函数(dom文档加载完成之后执行该函数中的代码)
+        // $(function () {
+        //     $("#btn1").click(function () {
+        //         alert("btn2");
+        //     });
+        // });
+
+        /*
+            window. onload和$(function) 区别
+            1. window.onload只能定义一次,如果定义多次，后边的会将前边的覆盖掉
+            2.  $(function)可以定义多次的
+        */
+
+        // 1
+        // function f1() {
+        //     alert("123");
+        // }
+        //
+        // function f2() {
+        //     alert("234");
+        // }
+        //
+        // window.onload = f1;
+        // window.onload = f2;
+
+        // 2
+        // $(function () {
+        //     alert("123");
+        // });
+        // $(function () {
+        //     alert("234");
+        // });
+
+        // 3.样式控制
+        $(function () {
+            // $("#div1").css("background-color", "red");
+            $("#div1").css("backgroundColor", "deeppink");
+        });
+    </script>
+</head>
+<body>
+    <div id="div1">div1...</div>
+    <div id="div2">div2...</div>
+    <input type="button" id="btn1">
+</body>
+
+</html>

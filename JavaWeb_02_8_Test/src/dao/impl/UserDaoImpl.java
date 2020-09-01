@@ -27,7 +27,6 @@ public class UserDaoImpl implements UserDao {
     public User findUserByUsernameAndPassword(String username, String password) {
         // 1.定义sql
         String sql = "select * from user where username = ? and password = ?";
-
         User user = null;
         try {
             user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), username, password);
@@ -119,7 +118,7 @@ public class UserDaoImpl implements UserDao {
         params.add(start);
         params.add(rows);
         sql = sb.toString();
-        System.out.println(sql);
+//        System.out.println(sql);
 
         List<User> users = null;
         try {

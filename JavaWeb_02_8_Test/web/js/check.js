@@ -1,12 +1,19 @@
 window.onload = function () {
-    document.getElementById("name").onblur = checkUsername;
-    document.getElementById("age").onblur = checkAge;
-    document.getElementById("reset").onclick = resetState;
-    document.getElementById("formAdd").onsubmit = function () {
-        return checkUsername() && checkAge();
+    if(document.getElementById("name") != null)
+        document.getElementById("name").onblur = checkUsername;
+    if(document.getElementById("age") != null)
+        document.getElementById("age").onblur = checkAge;
+    if(document.getElementById("reset") != null)
+        document.getElementById("reset").onclick = resetState;
+    if(document.getElementById("formAdd") != null) {
+        document.getElementById("formAdd").onsubmit = function () {
+            return checkUsername() && checkAge();
+        }
     }
-    document.getElementById("formUpdate").onsubmit = function () {
-        return checkUsername() && checkAge();
+    if(document.getElementById("formUpdate") != null) {
+        document.getElementById("formUpdate").onsubmit = function () {
+            return checkAge();
+        }
     }
 }
 
