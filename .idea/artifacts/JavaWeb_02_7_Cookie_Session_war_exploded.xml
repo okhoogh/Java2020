@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb_02_7_Cookie&amp;Session:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb_02_7_Cookie_Session_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb_02_7_Cookie&amp;Session" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="JavaWeb_02_7_Cookie&amp;Session" />
+        </element>
+      </element>
+      <element id="library" level="module" name="libs" module-name="JavaWeb_02_7_Cookie&amp;Session" />
+      <element id="library" level="module" name="libs (2)" module-name="JavaWeb_02_7_Cookie&amp;Session" />
+      <element id="library" level="module" name="libs (3)" module-name="JavaWeb_02_7_Cookie&amp;Session" />
+      <element id="javaee-facet-resources" facet="JavaWeb_02_7_Cookie&amp;Session/web/Web" />
+    </root>
+  </artifact>
+</component>

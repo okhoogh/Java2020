@@ -3,8 +3,20 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaSE_01/JavaSE_01.iml" filepath="$PROJECT_DIR$/JavaSE_01/JavaSE_01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02/JavaWeb_02.iml" filepath="$PROJECT_DIR$/JavaWeb_02/JavaWeb_02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_Html/JavaWeb_02_Html.iml" filepath="$PROJECT_DIR$/JavaWeb_02_Html/JavaWeb_02_Html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_10_JQuery基础/JavaWeb_02_10_JQuery基础.iml" filepath="$PROJECT_DIR$/JavaWeb_02_10_JQuery基础/JavaWeb_02_10_JQuery基础.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_11_JQuery高级/JavaWeb_02_11_JQuery高级.iml" filepath="$PROJECT_DIR$/JavaWeb_02_11_JQuery高级/JavaWeb_02_11_JQuery高级.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_1_Html/JavaWeb_02_1_Html.iml" filepath="$PROJECT_DIR$/JavaWeb_02_1_Html/JavaWeb_02_1_Html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_2_Bootstrap/JavaWeb_02_2_Bootstrap.iml" filepath="$PROJECT_DIR$/JavaWeb_02_2_Bootstrap/JavaWeb_02_2_Bootstrap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_3_XML/JavaWeb_02_3_XML.iml" filepath="$PROJECT_DIR$/JavaWeb_02_3_XML/JavaWeb_02_3_XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_4_01_Tomcat/JavaWeb_02_4_01_Tomcat.iml" filepath="$PROJECT_DIR$/JavaWeb_02_4_01_Tomcat/JavaWeb_02_4_01_Tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_4_02_Servlet/JavaWeb_02_4_02_Servlet.iml" filepath="$PROJECT_DIR$/JavaWeb_02_4_02_Servlet/JavaWeb_02_4_02_Servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_5_Servlet&amp;Http&amp;Request/JavaWeb_02_5_Servlet&amp;Http&amp;Request.iml" filepath="$PROJECT_DIR$/JavaWeb_02_5_Servlet&amp;Http&amp;Request/JavaWeb_02_5_Servlet&amp;Http&amp;Request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_5_Test/JavaWeb_02_5_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_02_5_Test/JavaWeb_02_5_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_6_Response/JavaWeb_02_6_Response.iml" filepath="$PROJECT_DIR$/JavaWeb_02_6_Response/JavaWeb_02_6_Response.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_7_Cookie&amp;Session/JavaWeb_02_7_Cookie&amp;Session.iml" filepath="$PROJECT_DIR$/JavaWeb_02_7_Cookie&amp;Session/JavaWeb_02_7_Cookie&amp;Session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_8_EL&amp;JSTL/JavaWeb_02_8_EL&amp;JSTL.iml" filepath="$PROJECT_DIR$/JavaWeb_02_8_EL&amp;JSTL/JavaWeb_02_8_EL&amp;JSTL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_8_Test/JavaWeb_02_8_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_02_8_Test/JavaWeb_02_8_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_02_9_Filter&amp;Listener/JavaWeb_02_9_Filter&amp;Listener.iml" filepath="$PROJECT_DIR$/JavaWeb_02_9_Filter&amp;Listener/JavaWeb_02_9_Filter&amp;Listener.iml" />
     </modules>
   </component>
 </project>

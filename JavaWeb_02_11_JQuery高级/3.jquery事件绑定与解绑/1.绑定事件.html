@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(function () {
+                $("#name").click(function () {
+                    alert("我被点击了...");
+                });
+
+                // $("#name").mouseover(function () {
+                //     alert("鼠标来了...");
+                // });
+                //
+                // $("#name").mouseout(function () {
+                //     alert("鼠标走了...");
+                // });
+
+                // 链式
+                $("#name").mouseover(function () {
+                    alert("鼠标来了...");
+                }).mouseout(function () {
+                    alert("鼠标走了...");
+                });
+
+                // 获得焦点
+                alert("我要获得焦点");
+                $("#name").focus();
+
+                //表单对象.submit();//让表单提交
+            });
+        </script>
+    </head>
+    <body>
+        <input id="name" type="text" value="绑定点击事件">
+    </body>
+</html>

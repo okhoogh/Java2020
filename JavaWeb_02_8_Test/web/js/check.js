@@ -1,18 +1,23 @@
 window.onload = function () {
-    if(document.getElementById("name") != null)
+    if(document.getElementById("name"))
         document.getElementById("name").onblur = checkUsername;
-    if(document.getElementById("age") != null)
+    if(document.getElementById("age"))
         document.getElementById("age").onblur = checkAge;
-    if(document.getElementById("reset") != null)
+    if(document.getElementById("reset"))
         document.getElementById("reset").onclick = resetState;
-    if(document.getElementById("formAdd") != null) {
+    if(document.getElementById("formAdd")) {
         document.getElementById("formAdd").onsubmit = function () {
             return checkUsername() && checkAge();
         }
     }
-    if(document.getElementById("formUpdate") != null) {
+    if(document.getElementById("formUpdate")) {
         document.getElementById("formUpdate").onsubmit = function () {
             return checkAge();
+        }
+    }
+    if (document.getElementById("btnBack")) {
+        document.getElementById("btnBack").onclick = function () {
+            history.back();
         }
     }
 }

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb_02_8_EL&amp;JSTL:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb_02_8_EL_JSTL_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb_02_8_EL&amp;JSTL" />
+        </element>
+      </element>
+      <element id="library" level="module" name="libs" module-name="JavaWeb_02_8_EL&amp;JSTL" />
+      <element id="javaee-facet-resources" facet="JavaWeb_02_8_EL&amp;JSTL/web/Web" />
+    </root>
+  </artifact>
+</component>
