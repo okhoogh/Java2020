@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 1.定义基本类型
+        var person = {"name":"张三", "age":26, "gender":true};
+
+        // 获取person对象的键和值
+        // for in 循环
+        // for (var key in person) {
+        //     // alert(key);
+        //     // 这样的方式获取不行。因为相当于 person."name"
+        //     // alert(key + " " + person.key);
+        //     alert(key + " " + person[key]);
+        // }
+
+        var persons2 = [
+            {"name":"张三", "age":26, "gender":true},
+            {"name":"李四", "age":26, "gender":true},
+            {"name":"王五", "age":26, "gender":true}
+        ];
+        for (var i = 0; i < persons2.length; i++) {
+            var p = persons2[i];
+            for (var pKey in p) {
+                alert(pKey + " " + p[pKey]);
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

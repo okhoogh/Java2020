@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // 1.定义基本类型
+        var person = {"name":"张三", "age":26, "gender":true};
+        // alert(person);
+        // alert(person.name);
+        // alert(person["name"]);
+
+        // 2.嵌套格式1: {} -> [] 一个Json对象包含一个数组
+        var persons1 = {
+            "person":[
+                {"name":"张三", "age":26, "gender":true},
+                {"name":"李四", "age":26, "gender":true},
+                {"name":"王五", "age":26, "gender":true}
+            ]
+        };
+        // alert(persons1);
+        // alert(persons1.person[2].name);
+        // alert(persons1["person"][2]["name"]);
+
+        // 2.嵌套格式2: [] -> {} 一个数组包含多个Json对象
+        var persons2 = [
+            {"name":"张三", "age":26, "gender":true},
+            {"name":"李四", "age":26, "gender":true},
+            {"name":"王五", "age":26, "gender":true}
+        ];
+        // alert(persons2);
+        alert(persons2[1].name);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
